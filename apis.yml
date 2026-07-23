@@ -1,7 +1,31 @@
 aid: avea-robotics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/avea-robotics.png
 name: Avea Robotics
-description: Avea Robotics is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Avea Robotics is a San Francisco-based robotics software company (Y Combinator
+  Spring 2026) building teleoperation software that lets operators control robots
+  from anywhere in the world with ultra-low latency. Its product, Sentinel, provides
+  real-time remote control, immersive viewing, haptic feedback, and multi-stream
+  video so operators can remotely intervene and keep robots running continuously.
+  The platform supports industrial robotic arms, humanoid robots, and custom
+  systems, and targets use cases such as data collection for Physical AI training,
+  remote real-world robot deployment, and supervised autonomy with human oversight.
+  Integration is handled during onboarding by sharing a robot's URDF and joint
+  control API rather than through a public developer API. As an early-stage startup,
+  Avea Robotics publishes a website, Notion-hosted documentation, and a Substack
+  blog, but does not yet expose a public REST API, OpenAPI specification, SDKs, or
+  a self-serve developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/avea-robotics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Robotics
+- Teleoperation
+- Robots
+- Physical AI
+- Remote Operation
+- Automation
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/avea-robotics-domain-security.yml
+- type: Website
+  url: https://www.avearobotics.com
+  name: Website
+- type: Documentation
+  url: https://docs.avearobotics.com
+  name: Documentation
+- type: Blog
+  url: https://avearobotics.substack.com/
+  name: Blog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
